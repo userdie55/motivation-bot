@@ -1,0 +1,20 @@
+{
+  "name": "phase0-additionaltask-bot",
+  "version": "1.0.0",
+  "description": "Создай несложный бот, используя все инструменты, которые вы изучили за фазу 0.",
+  "homepage": "https://github.com/userdie55/phase0-additionalTask-Bot#readme",
+  "bugs": {
+    "url": "https://github.com/userdie55/phase0-additionalTask-Bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/userdie55/phase0-additionalTask-Bot.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

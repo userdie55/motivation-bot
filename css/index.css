@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #949af1;
+  font-family: "IBM Plex Mono", sans-serif;
+  margin-top: 40px;
+}
+
+.chat-container {
+  background-color: #dddddd;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 45vw;
+}
+
+.chat-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.chat-header h1 {
+  color: #1a237e;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.chat-header p {
+  color: crimson;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.chat-box {
+  width: 770px;
+  height: 70vh;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-box {
+  scroll-behavior: smooth;
+}
+
+.bot-message,
+.user-message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  line-height: 1.5;
+}
+
+.bot-message {
+  background-color: #ff8b3d;
+  color: white;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #a3baff;
+  color: #1a1a1a;
+  align-self: flex-end;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  padding: 25px;
+  gap: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.send-button {
+  background-color: #424bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #2f39ca;
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .chat-container {
+    width: 90vw;
+  }
+  .chat-box {
+    height: 78vh;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    margin-top: 10px;
+  }
+
+  .chat-header {
+    width: 80vw;
+    height: 130px;
+  }
+
+  .chat-container {
+    width: 90vw;
+  }
+
+  .chat-box {
+    width: 75vw;
+    height: 75vh;
+  }
+  .chat-footer {
+    width: 82vw;
+  }
+}
